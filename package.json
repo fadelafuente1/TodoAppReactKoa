@@ -1,0 +1,27 @@
+{
+  "name": "todoappreactkoa",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadelafuente1/TodoAppReactKoa.git"
+  },
+  "author": "felipe de la fuente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadelafuente1/TodoAppReactKoa/issues"
+  },
+  "homepage": "https://github.com/fadelafuente1/TodoAppReactKoa#readme"
+}
